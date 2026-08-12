@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ForgeLine 확률형 아이템 공급 확률 정보">
+  <title>ForgeLine 확률형 아이템 정보</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <main>
+    <p class="eyebrow">FORGELINE</p>
+    <h1>확률형 아이템 정보</h1>
+    <p class="meta">공고일: 2026년 8월 12일 · 시행일: ForgeLine 정식 서비스 개시일 · 버전 1.0</p>
+    <p>이 페이지는 ForgeLine 서버 설정 chartVersion 5를 기준으로 장비 소환과 등급 합성의 확률 및 보장 규칙을 공개합니다. 실제 추첨은 서버에서 수행됩니다.</p>
+
+    <h2>1. 프리미엄 장비 소환</h2>
+    <ul>
+      <li>1회 비용: 보석 300개</li>
+      <li>10회 비용: 보석 2,700개</li>
+      <li>추첨 순서: 등급 결정 → 부위 4종 균등 결정 → 해당 부위 장비 균등 결정</li>
+    </ul>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>등급</th><th>기본 공급 확률</th></tr></thead>
+        <tbody>
+          <tr><td>N</td><td>50.000%</td></tr>
+          <tr><td>R</td><td>30.000%</td></tr>
+          <tr><td>SR</td><td>16.000%</td></tr>
+          <tr><td>SSR</td><td>4.000%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>2. 개별 장비 공급 확률</h2>
+    <p>같은 부위·같은 등급 안의 장비는 동일한 확률로 등장합니다. 아래 값은 천장 보정이 적용되지 않은 일반 회차 기준입니다.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>부위</th><th>장비 수</th><th>N 1종</th><th>R 1종</th><th>SR 1종</th><th>SSR 1종</th></tr></thead>
+        <tbody>
+          <tr><td>무기</td><td>11</td><td>1.1364%</td><td>0.6818%</td><td>0.3636%</td><td>0.0909%</td></tr>
+          <tr><td>투구</td><td>10</td><td>1.2500%</td><td>0.7500%</td><td>0.4000%</td><td>0.1000%</td></tr>
+          <tr><td>상의</td><td>10</td><td>1.2500%</td><td>0.7500%</td><td>0.4000%</td><td>0.1000%</td></tr>
+          <tr><td>장신구</td><td>8</td><td>1.5625%</td><td>0.9375%</td><td>0.5000%</td><td>0.1250%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>전체 장비 목록</h3>
+    <p><strong>무기 11종:</strong> 단검, 검, 도끼, 대검, 활, 석궁, 지팡이, 포지브레이커, 엠버 보우, 크루서블 스태프, 하스 셉터</p>
+    <p><strong>투구 10종:</strong> 가죽 투구, 강철 투구, 마법사 모자, 낡은 후드, 성기사 투구, 고블린 투구, 드래곤 투구, 후드, 포지가드 투구, 엠버 크라운</p>
+    <p><strong>상의 10종:</strong> 가죽 갑옷, 판금 갑옷, 로브, 사슬 갑옷, 성스러운 갑옷, 고블린 갑옷, 드래곤 갑옷, 체인 셔츠, 포지가드 갑옷, 엠버 맨틀</p>
+    <p><strong>장신구 8종:</strong> 반지, 신속 장신구, 방어 장신구, 균형 장신구, 십자가, 고블린 장신구, 힘의 장신구, 룬</p>
+
+    <h2>3. SSR 보장 규칙</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>SSR 미획득 누적 회차</th><th>SSR 확률</th></tr></thead>
+        <tbody>
+          <tr><td>1~119회</td><td>4%</td></tr>
+          <tr><td>120~129회</td><td>10%</td></tr>
+          <tr><td>130~139회</td><td>20%</td></tr>
+          <tr><td>140~149회</td><td>40%</td></tr>
+          <tr><td>150회</td><td>100%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>SSR을 획득하면 누적 회차가 0으로 초기화됩니다. SSR 확률이 상승하는 회차에는 N·R·SR이 기본 비율 50:30:16을 유지한 채 남은 확률 안에서 비례 조정됩니다.</p>
+
+    <h2>4. 10회 소환 보장</h2>
+    <ul>
+      <li>10개 결과가 모두 N이면 마지막 결과를 R로 조정하여 R 이상 1개를 보장합니다.</li>
+      <li>무기·투구·상의·장신구가 각각 1개 이상 나오도록 누락 부위를 보정합니다. 이때 기존 등급은 유지됩니다.</li>
+      <li>10회 소환도 SSR 천장 누적 회차에 10회로 반영됩니다.</li>
+    </ul>
+
+    <h2>5. 장비 등급 합성</h2>
+    <p>같은 부위·같은 등급의 장비 3개와 본을 사용합니다. 성공하면 선택한 부위의 상위 등급 장비 1개를 균등 확률로 획득하며, 실패하면 재료 장비와 본이 모두 소모됩니다.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>합성</th><th>재료</th><th>본 비용</th><th>성공</th><th>실패</th></tr></thead>
+        <tbody>
+          <tr><td>N → R</td><td>N 장비 3개</td><td>1,000</td><td>90%</td><td>10%</td></tr>
+          <tr><td>R → SR</td><td>R 장비 3개</td><td>5,000</td><td>50%</td><td>50%</td></tr>
+          <tr><td>SR → SSR</td><td>SR 장비 3개</td><td>20,000</td><td>25%</td><td>75%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>6. 변경 이력</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>적용일</th><th>버전</th><th>내용</th></tr></thead>
+        <tbody><tr><td>ForgeLine 정식 서비스 개시일</td><td>1.0</td><td>프리미엄 장비 소환과 장비 등급 합성 최초 공개</td></tr></tbody>
+      </table>
+    </div>
+    <p>확률 또는 대상 장비가 변경되는 경우 적용 전에 이 페이지와 게임 내 표시를 함께 갱신하고 변경 이력을 남깁니다.</p>
+
+    <footer>
+      <a href="../">정책 문서 홈</a> · <a href="../terms/">이용약관</a> · <a href="../privacy/">개인정보처리방침</a> · <a href="../refund/">환불 정책</a><br>
+      문의: <a href="mailto:rivergameforge@gmail.com">rivergameforge@gmail.com</a> · 010-5584-9884 (10:00~18:00 KST)<br>
+      © 2026 V8 Redline Studio
+    </footer>
+  </main>
+</body>
+</html>
