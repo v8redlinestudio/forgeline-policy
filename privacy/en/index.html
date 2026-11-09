@@ -11,7 +11,7 @@
   <main>
     <p class="eyebrow">FORGELINE</p>
     <h1>Privacy Policy</h1>
-    <p class="meta">Published: August 12, 2026 · Effective on the ForgeLine service launch date · Version 1.0</p>
+    <p class="meta">Originally published August 12, 2026 · Revision dated November 9, 2026 · Effective on the ForgeLine service launch date · Version 1.0</p>
     <p><a href="../" lang="ko">한국어 개인정보처리방침</a></p>
 
     <p>V8 Redline Studio (the “Operator”) values the privacy of users of the mobile game ForgeLine (the “Service”). This Privacy Policy explains what information may be processed, why it is used, how long it is retained, and the choices available to users.</p>
@@ -28,13 +28,17 @@
       <li>Security information: app and device integrity verdicts, request signatures and nonces, suspicious access records, and enforcement history.</li>
     </ul>
 
+    <h3>Optional gameplay analytics</h3>
+    <p>Gameplay analytics is off by default on Android. If you enable it in Settings, Firebase Analytics processes events such as game launches, tutorials, battles and ad reward outcomes, together with an app-instance identifier and app and device information. Gameplay analytics has Android advertising ID collection, ad storage, advertising user data use, and ad personalization disabled. You can withdraw this choice in the game settings. The rewarded advertising section below describes separate ad data processing.</p>
+
     <h3>Information processed when you contact us</h3>
     <ul>
-      <li>Email address, inquiry details, account-identifying information, and screenshots or files that you choose to attach.</li>
+      <li>In-game support requests include your account identifier, category, title, message, and any email address or diagnostics you choose to provide. If you contact us by email, we also use any screenshots or files you choose to attach.</li>
     </ul>
     <p>The Service does not require access to government identification numbers, contacts, street addresses, precise location, photos, microphones, or contact lists for its core features. If future features change the information processed, this Policy and the relevant app marketplace disclosures will be updated before those changes take effect.</p>
 
     <h2>2. Purposes of Processing</h2>
+    <p>We use Firebase Authentication to issue account identifiers for guest and linked accounts. We record your choices concerning terms, privacy and age eligibility. We use gameplay analytics to improve the game when you have enabled it.</p>
     <ul>
       <li>Creating, authenticating, linking, recovering, and deleting accounts.</li>
       <li>Saving game progress and operating content, currencies, items, rankings, and events.</li>
@@ -68,8 +72,10 @@
       <table>
         <thead><tr><th>Provider or service</th><th>Purpose</th><th>Information that may be processed</th></tr></thead>
         <tbody>
-          <tr><td>AFI Inc. / BACKND</td><td>Account authentication, game data storage, server functions, rankings, and purchase verification.</td><td>Member identifier, nickname, game records, connection and device information, and purchase verification information.</td></tr>
-          <tr><td>Google LLC / AdMob, UMP, Google Play, Play Games, and Play Integrity</td><td>Rewarded advertising, privacy choices, app distribution, payments, optional account linking, and integrity verification.</td><td>IP address, advertising and device identifiers, app interactions, diagnostics, consent and ad-viewing records, platform account identifiers and tokens, purchase information, and security verdicts.</td></tr>
+          <tr><td>Google LLC / Firebase Authentication</td><td>Guest and linked account authentication, session issuance, and abuse prevention.</td><td>Firebase user and login provider identifiers, authentication information, IP address, app and connection information.</td></tr>
+          <tr><td>Google LLC / Cloud Firestore and Cloud Functions for Firebase</td><td>Game saves and sync, rankings, support, reward, purchase and refund verification, and account deletion.</td><td>User identifier, nickname, agreement and gameplay records, balances and equipment, support inquiries and diagnostics, and ad reward and purchase verification records.</td></tr>
+          <tr><td>Google LLC / Firebase Analytics (Google Analytics)</td><td>Gameplay analytics and service improvement when enabled by the user.</td><td>App-instance identifiers, gameplay events, app and device information, and approximate region.</td></tr>
+          <tr><td>Google LLC / AdMob, User Messaging Platform (UMP), Google Play, Play Games, and Play Integrity</td><td>Rewarded advertising, privacy choices, app distribution, payments, optional account linking, and integrity verification.</td><td>IP address, advertising and device identifiers, app interactions, diagnostics, consent and ad-viewing records, platform account identifiers and tokens, purchase information, and security verdicts.</td></tr>
           <tr><td>Apple Inc. / App Store and Sign in with Apple</td><td>App distribution, payment processing, restoration, and optional account linking.</td><td>Platform account identifiers and tokens, purchase information, device information, and diagnostics.</td></tr>
           <tr><td>Unity Technologies ApS and affiliates</td><td>Game engine and in-app purchase integration components.</td><td>Device, diagnostic, and purchase-integration information generated during SDK operation.</td></tr>
         </tbody>
@@ -78,6 +84,8 @@
     <p>Each provider may process information under its own privacy policy and terms. This Policy will be updated when the Operator changes its processors or third-party services.</p>
 
     <h2>5. International Data Transfers</h2>
+    <p>ForgeLine operates its Cloud Firestore game database and Cloud Functions in the Seoul region. Firebase Authentication processes account and provider identifiers and authentication and connection information in the United States over TLS when you sign in or refresh a session. Account records are kept until deletion, subject to the retention terms in section 3, and service logs are retained for the periods described in <a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a>.</p>
+    <p>If you enable gameplay analytics, Firebase Analytics transmits the data described above over TLS as events occur. Google may process it in the United States and other countries where it operates facilities. Under our <a href="https://support.google.com/analytics/answer/7667196">Google Analytics data retention settings</a>, event data is kept for two months and user data for 14 months. New activity restarts the user data retention period. You can stop optional gameplay analytics in Settings.</p>
     <p>When Google, Apple, or Unity services are used, relevant account, purchase, advertising, device, diagnostic, and security information may be transferred over encrypted networks to the United States, Denmark, or other countries where those providers or their subprocessors operate facilities. Transfers occur when an ad is requested, a linked sign-in or purchase is performed, or an integrity check is requested. Information is retained for the service and contract period and any additional period required by applicable law or the provider's published retention policy. You may refuse optional advertising transfers through the privacy-options screen or operating-system settings; refusal may limit personalized advertising or ad availability. Refusing a transfer required for platform sign-in, payment, or restoration prevents use of that feature.</p>
 
     <h2>6. Advertising Identifiers and Personalized Advertising</h2>
@@ -94,6 +102,7 @@
     <ul>
       <li>Use the account deletion function in the in-game account management screen.</li>
       <li>Follow the <a href="../../deletion/">Account and Data Deletion instructions</a> to submit an email request.</li>
+      <li>Use game Settings to enable or withdraw permission for gameplay analytics.</li>
       <li>Use the advertising privacy choices form or your operating system settings to change advertising and tracking choices.</li>
     </ul>
     <p>We may request the minimum information necessary to verify account ownership. Information subject to a legal retention obligation may not be deleted until the applicable retention period expires.</p>
